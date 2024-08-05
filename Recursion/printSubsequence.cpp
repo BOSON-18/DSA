@@ -4,7 +4,7 @@ using namespace std;
 
 void subsets(int ind,int arr[],vector<int>& ans){
 
-    if(ind>=3){
+    if(ind>=5){
         for(int i=0;i<ans.size();i++){
             cout<<ans[i]<<" ";
         }
@@ -24,7 +24,7 @@ void subsets(int ind,int arr[],vector<int>& ans){
 
 int main(){
 
-    int arr[3]={3,1,2};
+    int arr[5]={3,1,2,8,9};
     vector<int> ans;
     subsets(0,arr,ans);
 }
